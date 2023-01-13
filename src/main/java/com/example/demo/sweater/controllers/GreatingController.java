@@ -15,6 +15,6 @@ public class GreatingController {
     public String greating(@RequestParam(name="name", required = false, defaultValue = "World")
                                String name, Map<String, Object> model) {
         model.put("name", name);
-        return "greatings";
+        return "greetings";
     }
 }
