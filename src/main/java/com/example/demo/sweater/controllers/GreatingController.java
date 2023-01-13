@@ -44,4 +44,12 @@ public class GreatingController {
 
         return "main";
     }
+
+    @PostMapping("filter")
+    public String filter(Map<String, Object> model, @RequestParam String filter) {
+        Iterable<Message> messages = repository.findMessageByTeg(filter);
+        model.put("messages", messages);
+
+        return "main";
+    }
 }
