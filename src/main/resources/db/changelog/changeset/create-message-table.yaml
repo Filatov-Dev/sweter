@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_message
+      author: Fill_Dev
+      changes:
+        - createTable:
+            tableName: messages
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: text
+                  type: varchar(200)
+              - column:
+                  name: teg
+                  type: varchar(150)
