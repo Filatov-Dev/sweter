@@ -10,4 +10,5 @@ public class SweaterApplication {
 		SpringApplication.run(SweaterApplication.class, args);
 	}
 
+
 }
