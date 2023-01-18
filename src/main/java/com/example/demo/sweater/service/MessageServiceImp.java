@@ -3,7 +3,6 @@ package com.example.demo.sweater.service;
 import com.example.demo.sweater.DAO.MessageDAO;
 import com.example.demo.sweater.models.Message;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
