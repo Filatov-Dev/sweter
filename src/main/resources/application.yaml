@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${DATASOURCE_HOST:localhost}:5446/postgres
+    username: postgres
+    password: postgres
+

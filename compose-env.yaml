@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db-messages:
+    image: postgres:13.6
+    restart: always
+    ports:
+      - 5446:5432
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_GB: postgres
